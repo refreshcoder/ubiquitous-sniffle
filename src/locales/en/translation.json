@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "title": "Market Signals",
+    "dashboard": "Dashboard",
+    "portfolio": "Portfolio",
+    "approach": "Investment Approach",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode"
+  },
+  "dashboard": {
+    "title": "China Market Signals",
+    "subtitle": "Prediction signals mapped to China A-share and HK ETF recommendations",
+    "refreshInfo": "Data refreshed daily via cron",
+    "loading": "Loading market data...",
+    "errorNoSource": "Enable at least one data source.",
+    "errorNoData": "No market data available.",
+    "errorFailed": "Failed to load market data.",
+    "signalThemes": "Signal Themes",
+    "portfolioRecommendations": "Portfolio Recommendations",
+    "downloadCSV": "Download CSV",
+    "signalStrength": "Signal Strength by Theme",
+    "insiderTrades": "Insider Trades",
+    "insiderSubtitle": "Top insider purchases and sales from A-Share market"
+  },
+  "sidebar": {
+    "filters": "Filters",
+    "dataSources": "Data Sources",
+    "polymarket": "Polymarket",
+    "kalshi": "Kalshi",
+    "volumeFilter": "Volume Filter",
+    "volumeFilterDesc": "Hide low liquidity markets",
+    "signalFilter": "Signal Filter",
+    "signalAll": "All Signals",
+    "signalModerate": "Moderate & Strong",
+    "signalStrong": "Strong Only",
+    "recommendations": "Recommendations",
+    "showStocks": "Show Stocks",
+    "showETFs": "Show ETFs",
+    "themeFilter": "Theme Filter",
+    "themeAll": "All Themes",
+    "lastRefresh": "Last refresh",
+    "refreshData": "Refresh Data"
+  },
+  "metrics": {
+    "marketsAnalyzed": "Markets Analyzed",
+    "themedMarkets": "Themed Markets",
+    "strongSignals": "Strong Signals",
+    "sources": "Sources"
+  },
+  "portfolio": {
+    "title": "My Portfolio",
+    "loading": "Loading portfolio...",
+    "noData": "No portfolio data found. Add your holdings to public/data/portfolio.json.",
+    "holdingsCount": "holdings",
+    "totalEquity": "Total Equity",
+    "totalReturn": "Total Return",
+    "winnersLosers": "Winners / Losers",
+    "split": "ETF / Stock Split",
+    "allocation": "Allocation",
+    "allAccounts": "All Accounts",
+    "all": "All",
+    "etfs": "ETFs",
+    "stocks": "Stocks",
+    "symbol": "Symbol",
+    "name": "Name",
+    "type": "Type",
+    "shares": "Shares",
+    "price": "Price",
+    "avgCost": "Avg Cost",
+    "returnPct": "Return %",
+    "returnDlr": "Return $",
+    "equity": "Equity",
+    "signal": "Signal",
+    "holdingsWithSignals": "Holdings with Market Signals",
+    "yourReturn": "Your return",
+    "themes": "Themes",
+    "misaligned": "Signal and current position are misaligned — consider reviewing"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+}

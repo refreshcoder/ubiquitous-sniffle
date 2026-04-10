@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "title": "市场信号 (中国版)",
+    "dashboard": "仪表盘",
+    "portfolio": "投资组合",
+    "approach": "投资策略",
+    "lightMode": "切换到亮色模式",
+    "darkMode": "切换到暗色模式"
+  },
+  "dashboard": {
+    "title": "中国市场行情与信号",
+    "subtitle": "预测市场及宏观信号映射到 A股/港股 ETF 及个股推荐",
+    "refreshInfo": "数据通过定时任务每日更新",
+    "loading": "正在加载市场数据...",
+    "errorNoSource": "请至少启用一个数据源。",
+    "errorNoData": "暂无市场数据可用。",
+    "errorFailed": "加载市场数据失败。",
+    "signalThemes": "信号主题",
+    "portfolioRecommendations": "投资组合推荐",
+    "downloadCSV": "下载 CSV",
+    "signalStrength": "按主题划分的信号强度",
+    "insiderTrades": "内幕交易与资金异动",
+    "insiderSubtitle": "A股市场高管与大资金增减持动态"
+  },
+  "sidebar": {
+    "filters": "筛选器",
+    "dataSources": "数据源",
+    "polymarket": "Polymarket",
+    "kalshi": "Kalshi",
+    "volumeFilter": "交易量过滤",
+    "volumeFilterDesc": "隐藏低流动性市场",
+    "signalFilter": "信号过滤",
+    "signalAll": "所有信号",
+    "signalModerate": "中等 & 强信号",
+    "signalStrong": "仅强信号",
+    "recommendations": "推荐项",
+    "showStocks": "显示股票",
+    "showETFs": "显示 ETF",
+    "themeFilter": "主题过滤",
+    "themeAll": "所有主题",
+    "lastRefresh": "上次刷新",
+    "refreshData": "刷新数据"
+  },
+  "metrics": {
+    "marketsAnalyzed": "分析市场数",
+    "themedMarkets": "主题市场数",
+    "strongSignals": "强信号数",
+    "sources": "数据源"
+  },
+  "portfolio": {
+    "title": "我的投资组合",
+    "loading": "正在加载投资组合...",
+    "noData": "未找到投资组合数据。请将持仓添加到 public/data/portfolio.json。",
+    "holdingsCount": "项持仓",
+    "totalEquity": "总资产",
+    "totalReturn": "总收益",
+    "winnersLosers": "盈利 / 亏损",
+    "split": "ETF / 股票占比",
+    "allocation": "资产配置",
+    "allAccounts": "所有账户",
+    "all": "全部",
+    "etfs": "ETF",
+    "stocks": "股票",
+    "symbol": "代码",
+    "name": "名称",
+    "type": "类型",
+    "shares": "份额",
+    "price": "价格",
+    "avgCost": "平均成本",
+    "returnPct": "收益率 %",
+    "returnDlr": "收益",
+    "equity": "资产",
+    "signal": "信号",
+    "holdingsWithSignals": "有市场信号的持仓",
+    "yourReturn": "您的收益",
+    "themes": "主题",
+    "misaligned": "信号与当前仓位方向不一致 — 建议审查"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+}
