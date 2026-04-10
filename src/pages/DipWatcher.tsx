@@ -14,7 +14,6 @@ import {
   saveCachedSignals,
   clearSignalCache,
   loadTradeLog,
-  saveTradeLog,
   addTradeEntry,
   deleteTradeEntry,
   clearTradeLog,

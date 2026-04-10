@@ -5,7 +5,7 @@ import { fetchFredSeries, fetchAllFredIndicators, FRED_SERIES } from "../fred";
 
 describe("FRED_SERIES config", () => {
   it("maps all series to a theme", () => {
-    for (const [id, config] of Object.entries(FRED_SERIES)) {
+    for (const [_, config] of Object.entries(FRED_SERIES)) {
       expect(config.theme).toBeTruthy();
       expect(config.label).toBeTruthy();
     }

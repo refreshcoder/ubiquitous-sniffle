@@ -5,6 +5,8 @@ import {
   MIN_VOLUME_POLYMARKET,
 } from "../lib/config";
 
+const BASE_URL = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
 /** Patterns that indicate sports, entertainment, or other non-financial markets. */
 const EXCLUDE_PATTERNS = [
   /\bvs\.\s/i,                    // "Team vs. Team"
@@ -90,7 +92,7 @@ export async function loadMarketData(options: {
   const { kalshi = true, polymarket = true, volumeFilter = true } = options;
 
   try {
-    const resp = await fetch(`${import.meta.env.BASE_URL}data/markets.json`);
+    const resp = await fetch(`${BASE_URL}data/markets.json`);
     if (!resp.ok) return [];
     const data: NormalizedMarket[] = await resp.json();
 
@@ -120,7 +122,7 @@ export async function loadMarketData(options: {
 /** Load portfolio holdings from static JSON (supports multi-account format). */
 export async function loadPortfolioHoldings(): Promise<Set<string>> {
   try {
-    const resp = await fetch(`${import.meta.env.BASE_URL}data/portfolio.json`);
+    const resp = await fetch(`${BASE_URL}data/portfolio.json`);
     if (!resp.ok) return new Set();
     const data = await resp.json();
     const symbols = new Set<string>();
@@ -140,7 +142,7 @@ export async function loadPortfolioHoldings(): Promise<Set<string>> {
 /** Load insider trade data from the static JSON file (refreshed by cron). */
 export async function loadInsiderTrades(): Promise<InsiderTrade[]> {
   try {
-    const resp = await fetch(`${import.meta.env.BASE_URL}data/insider-trades.json`);
+    const resp = await fetch(`${BASE_URL}data/insider-trades.json`);
     if (!resp.ok) return [];
     return await resp.json();
   } catch {

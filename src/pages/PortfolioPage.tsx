@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import type { Holding, PortfolioData, PortfolioAccount, Recommendation } from "../types";
+import type { PortfolioData, Recommendation } from "../types";
 
 function formatCurrency(n: number): string {
   return n.toLocaleString("en-US", { style: "currency", currency: "USD" });
@@ -27,14 +27,16 @@ export default function PortfolioPage({ recommendations }: { recommendations: Re
   const [accountFilter, setAccountFilter] = useState<string>("all");
 
   useEffect(() => {
-    fetch(import.meta.env.BASE_URL + "data/portfolio.json")
+    const BASE_URL = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+    
+    fetch(`${BASE_URL}data/portfolio.json`)
       .then((r) => r.json())
       .then((data) => {
         // Support both legacy single-account and new multi-account format
         if (data.accounts) {
           setPortfolio(data as PortfolioData);
-        } else {
-          setPortfolio({ accounts: [data as PortfolioAccount] });
+        } else if (data.holdings) {
+          setPortfolio({ accounts: [{ id: "legacy", name: "Main Account", institution: "Broker", holdings: data.holdings }] } as unknown as PortfolioData);
         }
         setLoading(false);
       })

@@ -1,9 +1,11 @@
 import type { EconomicIndicator, CalendarEvent, SentimentReading, NewsItem } from "../types/economic";
 import type { ValuationIndicator } from "./valuation";
 
+const BASE_URL = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
 async function loadJson<T>(path: string): Promise<T[]> {
   try {
-    const resp = await fetch(`${import.meta.env.BASE_URL}data/${path}`);
+    const resp = await fetch(`${BASE_URL}data/${path}`);
     if (!resp.ok) return [];
     return await resp.json();
   } catch {

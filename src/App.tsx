@@ -5,7 +5,7 @@ import type { EconomicIndicator, CalendarEvent, SentimentReading, NewsItem } fro
 import { SIGNAL_THEMES } from "./lib/config";
 import { loadMarketData, isStrongSignal, loadInsiderTrades, loadPortfolioHoldings } from "./api/fetchers";
 import { loadEconomicData, loadCalendarData, loadSentimentData, loadNewsData } from "./api/loaders";
-import { aggregateThemeSignals, generateRecommendations, buildPortfolioSummary } from "./lib/portfolio";
+import { aggregateThemeSignals, generateRecommendations } from "./lib/portfolio";
 import Nav from "./components/Nav";
 import Sidebar from "./components/Sidebar";
 import SummaryMetrics from "./components/SummaryMetrics";
