@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "cal-1",
+    "date": "2026-04-15",
+    "event": "Q1 GDP Release",
+    "impact": "high"
+  },
+  {
+    "id": "cal-2",
+    "date": "2026-04-20",
+    "event": "LPR Rate Decision",
+    "impact": "high"
+  }
+]
