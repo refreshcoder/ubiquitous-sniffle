@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CN_LPR_1Y",
+    "name": "China 1-Year LPR",
+    "value": NaN,
+    "previous": NaN,
+    "unit": "%",
+    "date": "1991-04-21",
+    "trend": "neutral"
+  },
+  {
+    "id": "CN_PMI",
+    "name": "China Manufacturing PMI",
+    "value": 50.4,
+    "previous": 49.0,
+    "unit": "Index",
+    "date": "2026年03月份",
+    "trend": "up"
+  }
+]
