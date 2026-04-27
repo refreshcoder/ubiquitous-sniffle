@@ -1,0 +1,44 @@
+[
+  {
+    "id": "CN_PBOC_RATE_CUT",
+    "title": "PBOC to cut LPR this month?",
+    "subtitle": "Will the central bank cut interest rates to stimulate the economy?",
+    "source": "polymarket",
+    "url": "#",
+    "probability": 0.65,
+    "volume": 5000000,
+    "close_date": "2026-04-30",
+    "themes": [
+      "pboc_rate",
+      "macro_economy"
+    ]
+  },
+  {
+    "id": "CN_TECH_RALLY",
+    "title": "Semiconductor sector to outperform CSI 300?",
+    "subtitle": "Tech war and self-reliance driving the sector.",
+    "source": "kalshi",
+    "url": "#",
+    "probability": 0.8,
+    "volume": 8000000,
+    "close_date": "2026-06-30",
+    "themes": [
+      "semiconductors",
+      "stock_market"
+    ]
+  },
+  {
+    "id": "CN_SOE_VALUATION",
+    "title": "High dividend SOEs to hit new highs?",
+    "subtitle": "Value revaluation of state-owned enterprises.",
+    "source": "kalshi",
+    "url": "#",
+    "probability": 0.75,
+    "volume": 12000000,
+    "close_date": "2026-12-31",
+    "themes": [
+      "soe_valuation",
+      "stock_market"
+    ]
+  }
+]
