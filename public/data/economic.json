@@ -11,10 +11,10 @@
   {
     "id": "CN_PMI",
     "name": "China Manufacturing PMI",
-    "value": 50.3,
-    "previous": 50.4,
+    "value": 50.0,
+    "previous": 50.3,
     "unit": "Index",
-    "date": "2026年04月份",
+    "date": "2026年05月份",
     "trend": "down"
   }
 ]
