@@ -1,0 +1,13 @@
+[
+  {
+    "ticker": "600519.SH",
+    "company_name": "贵州茅台",
+    "insider_name": "Management",
+    "title": "Director",
+    "trade_type": "buy",
+    "shares": 10000,
+    "price": 1500.0,
+    "value": 15000000.0,
+    "trade_date": "2026-04-01"
+  }
+]
